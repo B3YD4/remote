@@ -6,7 +6,7 @@ const http = require("http");
 
 router.get('/', (req, res) => {
 
-  const host = '34.201.81.34'; 
+  const host = '127.0.0.1'; 
   const port = 8000;
 
   const requestListener = function (req, res) {
