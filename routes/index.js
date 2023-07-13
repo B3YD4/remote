@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
       const cport = req.connection.remotePort
       const cadress = req.connection.remoteAddress
       let c_port = cport.toString();
-      res.render('index', {ip:cadress, port:c_port});
+      res.render('index', {ip:cadress, port:c_port, host:host});
 
       req.on('close', () => {
         console.log('bağlantı koptu');
